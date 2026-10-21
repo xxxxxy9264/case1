@@ -159,3 +159,16 @@ mvn clean package
 2. 配置 Tomcat 服务器（Run → Edit Configurations → Tomcat Server）
 3. 部署 WAR exploded 工件
 4. 运行即可自动打开登录页面（http://localhost:8080/case1_war_exploded/index.jsp）
+## 软件运行环境
+
+1. **JDK（Java 开发工具包）**
+    - 示例：JDK 21
+    - 选型理由：Servlet、Tomcat 依赖，兼容 JDBC 驱动，稳定性强
+2. **Web 服务器：Apache Tomcat**
+    - 示例：Tomcat 11
+    - 选型理由：轻量免费 Servlet 容器，部署 JavaWeb 项目，支持 Servlet/JSP
+3. **数据库：MySQL**
+    - 示例：MySQL 5.7
+    - 选型理由：开源关系型数据库，学习 JavaWeb 最常用，适配 JDBC，支持 utf8mb4 中文
+4. **项目构建工具：Maven**
+    - 选型理由：自动管理 jar 包依赖（mysql 驱动等），一键编译打包，统一项目环境
